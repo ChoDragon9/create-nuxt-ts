@@ -1,18 +1,21 @@
 <template>
   <div>
-    <gallery-images />
+    <gallery-assets-images />
+    <gallery-static-images />
   </div>
 </template>
 
 <script lang="ts">
 import Component from 'vue-class-component'
 import { Vue } from 'nuxt-property-decorator'
-import GalleryImages from '~/components/GalleryImages.vue'
+import GalleryAssetsImages from '~/components/GalleryAssetsImages.vue'
+import GalleryStaticImages from '~/components/GalleryStaticImages.vue'
 
 @Component({
   layout: 'content',
   components: {
-    GalleryImages
+    GalleryAssetsImages,
+    GalleryStaticImages
   },
   middleware: 'page-logger'
 })
