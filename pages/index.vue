@@ -1,13 +1,16 @@
 <template>
   <div class="container">
-    <logo />
-    <a class="button--green" @click.prevent="upCount()">
-      Up Count
-    </a>
-    {{ count }}
-    <a class="button--grey" @click.prevent="downCount()">
-      Down
-    </a>
+    <div>
+      <logo />
+      <a class="button--green" @click.prevent="upCount()">
+        Up Count
+      </a>
+      {{ count }}
+      <a class="button--grey" @click.prevent="downCount()">
+        Down
+      </a>
+    </div>
+    <gallery />
   </div>
 </template>
 
@@ -15,10 +18,12 @@
 import Component from 'vue-class-component'
 import { Mutation, State, Vue } from 'nuxt-property-decorator'
 import Logo from '~/components/Logo.vue'
+import Gallery from '~/components/Gallery.vue'
 
 @Component({
   components: {
-    Logo
+    Logo,
+    Gallery
   }
 })
 class Page extends Vue {
