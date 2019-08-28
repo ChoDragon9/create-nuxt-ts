@@ -13,7 +13,8 @@ import GalleryImages from '~/components/GalleryImages.vue'
   layout: 'content',
   components: {
     GalleryImages
-  }
+  },
+  middleware: 'page-logger'
 })
 class Gallery extends Vue {}
 

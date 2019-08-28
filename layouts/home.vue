@@ -12,7 +12,8 @@ import { Component, Vue } from '~/node_modules/nuxt-property-decorator'
 @Component({
   components: {
     Navi
-  }
+  },
+  middleware: 'layout-logger'
 })
 class HomeLayout extends Vue {}
 

@@ -57,6 +57,10 @@ const config: NuxtConfiguration = {
      ** You can extend webpack config here
      */
     extend(config, ctx) {}
+  },
+
+  router: {
+    middleware: 'route-logger'
   }
 }
 

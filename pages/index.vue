@@ -22,7 +22,8 @@ import Logo from '~/components/Logo.vue'
   layout: 'home',
   components: {
     Logo
-  }
+  },
+  middleware: 'page-logger'
 })
 class Page extends Vue {
   @State count
