@@ -10,7 +10,12 @@ import Component from 'vue-class-component'
 import { Vue } from 'nuxt-property-decorator'
 
 @Component({})
-class Navi extends Vue {}
+class Navi extends Vue {
+  constructor() {
+    super()
+    console.log('component getTime', this.$getTime())
+  }
+}
 
 export default Navi
 </script>

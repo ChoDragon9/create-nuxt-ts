@@ -26,6 +26,10 @@ import Logo from '~/components/Logo.vue'
   middleware: 'page-logger'
 })
 class Page extends Vue {
+  constructor() {
+    super()
+    console.log('page getTime', this.$getTime())
+  }
   @State count
   @Mutation upCount
   @Mutation downCount
