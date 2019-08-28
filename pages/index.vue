@@ -10,7 +10,6 @@
         Down
       </a>
     </div>
-    <gallery />
   </div>
 </template>
 
@@ -18,13 +17,11 @@
 import Component from 'vue-class-component'
 import { Mutation, State, Vue } from 'nuxt-property-decorator'
 import Logo from '~/components/Logo.vue'
-import Gallery from '~/components/Gallery.vue'
 
 @Component({
   layout: 'home',
   components: {
-    Logo,
-    Gallery
+    Logo
   }
 })
 class Page extends Vue {

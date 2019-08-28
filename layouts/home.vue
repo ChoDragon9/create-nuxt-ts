@@ -1,6 +1,20 @@
 <template>
   <div class="wrap">
-    <div class="navi">NAVI</div>
+    <navi />
     <nuxt />
   </div>
 </template>
+
+<script lang="ts">
+import Navi from '~/components/Navi.vue'
+import { Component, Vue } from '~/node_modules/nuxt-property-decorator'
+
+@Component({
+  components: {
+    Navi
+  }
+})
+class HomeLayout extends Vue {}
+
+export default HomeLayout
+</script>

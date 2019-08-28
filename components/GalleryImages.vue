@@ -22,9 +22,9 @@ import Component from 'vue-class-component'
 import { Vue } from 'nuxt-property-decorator'
 
 @Component({})
-class Gallery extends Vue {}
+class GalleryImages extends Vue {}
 
-export default Gallery
+export default GalleryImages
 </script>
 
 <style>

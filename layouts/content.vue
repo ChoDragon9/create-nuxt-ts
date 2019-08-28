@@ -1,10 +1,24 @@
 <template>
   <div class="wrap">
-    <div class="navi">NAVI</div>
+    <navi />
     <div class="gnb">GNB</div>
     <nuxt />
   </div>
 </template>
+
+<script lang="ts">
+import Navi from '~/components/Navi.vue'
+import { Component, Vue } from '~/node_modules/nuxt-property-decorator'
+
+@Component({
+  components: {
+    Navi
+  }
+})
+class ContentLayout extends Vue {}
+
+export default ContentLayout
+</script>
 
 <style>
 html,
