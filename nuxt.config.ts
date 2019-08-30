@@ -31,6 +31,7 @@ const config: NuxtConfiguration = {
    */
   plugins: [
     '~/directives/focus.ts',
+    '~/filters/capitalize.ts',
     '~/plugins/date-inject.ts'
   ],
   /*
