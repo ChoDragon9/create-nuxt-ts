@@ -29,7 +29,10 @@ const config: NuxtConfiguration = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['~/plugins/date-inject.ts'],
+  plugins: [
+    '~/directives/focus.ts',
+    '~/plugins/date-inject.ts'
+  ],
   /*
    ** Nuxt.js dev-modules
    */

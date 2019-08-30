@@ -2,6 +2,7 @@
   <div class="navi">
     <nuxt-link to="/">Home</nuxt-link>
     <nuxt-link to="/gallery">Gallery</nuxt-link>
+    <nuxt-link to="/form">Form</nuxt-link>
   </div>
 </template>
 
