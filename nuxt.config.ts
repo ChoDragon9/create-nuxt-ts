@@ -29,7 +29,11 @@ const config: NuxtConfiguration = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [
+    '~/directives/focus.ts',
+    '~/filters/capitalize.ts',
+    '~/plugins/date-inject.ts'
+  ],
   /*
    ** Nuxt.js dev-modules
    */
@@ -57,6 +61,10 @@ const config: NuxtConfiguration = {
      ** You can extend webpack config here
      */
     extend(config, ctx) {}
+  },
+
+  router: {
+    middleware: 'route-logger'
   }
 }
 

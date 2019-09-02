@@ -23,6 +23,9 @@
     "@nuxt/typescript": "^2.8.1",
     "@nuxtjs/eslint-config": "^1.0.1",
     "@nuxtjs/eslint-module": "^1.0.0",
+    "@types/jest": "^24.0.18",
+    "@typescript-eslint/eslint-plugin": "^2.0.0",
+    "@typescript-eslint/parser": "^2.0.0",
     "@vue/test-utils": "^1.0.0-beta.27",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^24.1.0",
@@ -34,6 +37,7 @@
     "nodemon": "^1.18.9",
     "nuxt-property-decorator": "^2.3.0",
     "prettier": "^1.16.4",
+    "ts-jest": "^24.0.2",
     "vue-jest": "^4.0.0-0"
   }
 }
