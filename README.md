@@ -1,3 +1,5 @@
+> [셋업가이드](https://github.com/ChoDragon9/posts/wiki/프레임워크n라이브러리#nuxt)
+
 ``` bash
 # install dependencies
 $ npm install
