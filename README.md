@@ -44,10 +44,10 @@ assets에 있는 이미지 파일은 `v-bind`를 사용하면 동작하지 않�
 #### components
 VueJs 컴포넌트를 포함하는 디렉토리이다. 이 컴포넌트들에게는 `asyncData` 또는 `fetch`를 사용해선 안된다.
 
-#### directives
+#### [Custom] directives
 VueJs 디렉티브를 포함하는 디렉토리이다. Nuxt 구조에 커스텀으로 추가한 디렉토리이다. `nuxt.config.ts`의 `plugins`에 해당 파일을 추가해줘야 한다.
 
-#### filters
+#### [Custom] filters
 VueJs 필터를 포함하는 디렉토리이다. Nuxt 구조에 커스텀으로 추가한 디렉토리이다. `nuxt.config.ts`의 `plugins`에 해당 파일을 추가해줘야 한다.
 
 #### layouts
@@ -88,7 +88,7 @@ const config: NuxtConfiguration = {
 #### pages
 애플리케이션의 뷰와 라우트를 포함하는 디렉토리이다. NuxtJs는 모든 `.vue`파일을 읽고 애플리케이션의 라우터를 생성한다.
 
-#### plugins
+#### [Custom] plugins
 > Nuxt의 plugins 정책을 따르지 않는다. 등록된 plugin을 TypeScript에서 추적을 못 하기 때문에 커스텀한 룰을 따른다. 
 
 **루트 VueJs 애플리케이션이 생성되기 전**에 실행하고 싶은 자바스크립트 플러그인을 포함하는 디렉토리이다.
@@ -124,5 +124,5 @@ Vuex Store 파일을 포함하는 디렉토리이다. Vuex Store 옵션은 NuxtJ
 #### test
 테스트 파일을 포함하는 디렉토리이다.
 
-#### types
+#### [Custom] types
 TypeScript의 타입 정의파일을 포함하는 디렉토리이다. Nuxt 구조에 커스텀으로 추가한 디렉토리이다.
