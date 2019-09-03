@@ -17,6 +17,7 @@
 import Component from 'vue-class-component'
 import { Mutation, State, Vue } from 'nuxt-property-decorator'
 import Logo from '~/components/Logo.vue'
+import { getCurrentTime } from '~/plugins/current-time'
 
 @Component({
   layout: 'home',
@@ -28,7 +29,7 @@ import Logo from '~/components/Logo.vue'
 class Page extends Vue {
   constructor() {
     super()
-    console.log('page getTime', this.$getTime())
+    console.log('page getTime', getCurrentTime())
   }
   @State count
   @Mutation upCount

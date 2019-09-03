@@ -8,6 +8,7 @@
 <script lang="ts">
 import Navi from '~/components/Navi.vue'
 import { Component, Vue } from '~/node_modules/nuxt-property-decorator'
+import { getCurrentTime } from '~/plugins/current-time'
 
 @Component({
   components: {
@@ -18,7 +19,7 @@ import { Component, Vue } from '~/node_modules/nuxt-property-decorator'
 class HomeLayout extends Vue {
   constructor() {
     super()
-    console.log('layout getTime', this.$getTime())
+    console.log('layout getTime', getCurrentTime())
   }
 }
 

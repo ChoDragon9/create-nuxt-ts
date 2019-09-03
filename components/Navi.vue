@@ -10,6 +10,7 @@
 import Component from 'vue-class-component'
 import { Vue } from 'nuxt-property-decorator'
 import { GNB } from '~/constants/gnb'
+import { getCurrentTime } from '~/plugins/current-time'
 
 @Component({})
 class Navi extends Vue {
@@ -18,7 +19,7 @@ class Navi extends Vue {
   FORM = GNB.FORM
   constructor() {
     super()
-    console.log('component getTime', this.$getTime())
+    console.log('component getTime', getCurrentTime())
   }
 }
 

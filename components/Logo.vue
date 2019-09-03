@@ -1,7 +1,7 @@
 <template>
   <div class="VueToNuxtLogo">
     <template v-for="item in classes">
-      <div :class="`${COMMON_CLASS} ${item}`" :key="item"></div>
+      <div :key="item" :class="`${COMMON_CLASS} ${item}`"></div>
     </template>
   </div>
 </template>
