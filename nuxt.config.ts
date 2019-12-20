@@ -1,10 +1,6 @@
-import NuxtConfiguration from '@nuxt/config'
+import { Configuration } from '@nuxt/types'
 
-const config: NuxtConfiguration = {
-  typescript: {
-    typeCheck: true,
-    ignoreNotFoundWarnings: true
-  },
+const config: Configuration = {
   mode: 'spa',
   /*
    ** Headers of the page
@@ -35,16 +31,17 @@ const config: NuxtConfiguration = {
    */
   plugins: ['~/directives/focus.ts', '~/filters/capitalize.ts'],
   /*
-   ** Nuxt.js dev-modules
-   */
-  devModules: [
-    // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module'
-  ],
-  /*
    ** Nuxt.js modules
    */
-  buildModules: ['@nuxt/typescript-build'],
+  buildModules: [
+    [
+      '@nuxt/typescript-build',
+      {
+        typeCheck: true,
+        ignoreNotFoundWarnings: true
+      }
+    ]
+  ],
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios'

@@ -2,11 +2,11 @@
   <div class="container">
     <div>
       <logo />
-      <a class="button--green" @click.prevent="upCount()">
+      <a @click.prevent="upCount()" class="button--green">
         Up Count
       </a>
       {{ count }}
-      <a class="button--grey" @click.prevent="downCount()">
+      <a @click.prevent="downCount()" class="button--grey">
         Down
       </a>
     </div>
@@ -14,10 +14,10 @@
 </template>
 
 <script lang="ts">
-import Component from 'vue-class-component'
-import { Mutation, State, Vue } from 'nuxt-property-decorator'
+import { Vue, Component } from 'vue-property-decorator'
 import Logo from '~/components/Logo.vue'
 import { getCurrentTime } from '~/plugins/current-time'
+import { Mutation, State } from '~/node_modules/nuxt-property-decorator'
 
 @Component({
   layout: 'home',

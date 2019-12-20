@@ -5,18 +5,19 @@
   "author": "ChoDragon9",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "generate": "nuxt generate",
-    "start": "nuxt start",
+    "dev": "nuxt-ts --spa",
+    "build": "nuxt-ts build --spa",
+    "generate": "nuxt-ts generate",
+    "start": "nuxt-ts start",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "test": "jest"
   },
   "dependencies": {
+    "@nuxt/typescript-runtime": "^0.3.3",
     "@nuxtjs/axios": "^5.3.6",
     "cross-env": "^5.2.0",
     "express": "^4.16.4",
-    "nuxt": "^2.8.1",
+    "nuxt": "^2.9.2",
     "ts-node": "^8.3.0"
   },
   "devDependencies": {
