@@ -1,6 +1,10 @@
 import NuxtConfiguration from '@nuxt/config'
 
 const config: NuxtConfiguration = {
+  typescript: {
+    typeCheck: true,
+    ignoreNotFoundWarnings: true
+  },
   mode: 'spa',
   /*
    ** Headers of the page
@@ -40,6 +44,7 @@ const config: NuxtConfiguration = {
   /*
    ** Nuxt.js modules
    */
+  buildModules: ['@nuxt/typescript-build'],
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios'
