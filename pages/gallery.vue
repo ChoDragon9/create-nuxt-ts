@@ -6,7 +6,8 @@
 </template>
 
 <script lang="ts">
-  import { Vue, Component } from 'vue-property-decorator'
+import Component from 'vue-class-component'
+import { Vue } from 'nuxt-property-decorator'
 import GalleryAssetsImages from '~/components/GalleryAssetsImages.vue'
 import GalleryStaticImages from '~/components/GalleryStaticImages.vue'
 
