@@ -28,8 +28,7 @@
     "types": [
       "@types/node",
       "@types/jest",
-      "@nuxt/vue-app",
-      "@nuxt/config"
+      "@nuxt/types"
     ]
   }
 }
